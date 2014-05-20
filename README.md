@@ -7,6 +7,10 @@ Visualisation dans le cadre de la création théâtrale [Construire une cathédr
 
 Inspiration pour la disposition: illustration de l'article [Abraham Aboulafia, Cabaliste et prophète](http://www.lyber-eclat.net/lyber/wolson/wolfson.html) de Elliot. R. Wolfson (cité par Catherine Rohner, Universite de Neuchâtel).
 
+<<<<<<< HEAD
 ![Roue Tsérouf · Commit fbddc9b5db](https://raw.githubusercontent.com/olange/roue-tserouf/master/roue_tserouf/roue-tserouf-commit-fbddc9b5db.png "Roue Tsérouf · Commit fbddc9b5db")
 
 [Commit fbddc9b5db](https://github.com/olange/roue-tserouf/commit/fbddc9b5db) ([tag experiment-01](https://github.com/olange/roue-tserouf/tree/experiment-01))
+=======
+![Roue Tsérouf · Commit fbddc9b5db](https://raw.githubusercontent.com/olange/roue-tserouf/master/roue_tserouf/roue-tserouf-commit-fbddc9b5db.png "Roue Tsérouf · Commit fbddc9b5db") [Commit fbddc9b5db](https://github.com/olange/roue-tserouf/commit/fbddc9b5db) ([tag experiment-01](https://github.com/olange/roue-tserouf/tree/experiment-01))
+>>>>>>> 77d3422b3b3deb06d7c802f78ebe97eedf5228d0
