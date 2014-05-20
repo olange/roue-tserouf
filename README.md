@@ -9,4 +9,4 @@ Inspiration pour la disposition: illustration de l'article [Abraham Aboulafia, C
 
 ![Roue Tsérouf · Commit f4b09f3](https://raw.githubusercontent.com/olange/roue-tserouf/master/roue_tserouf/roue-tserouf-commit-f4b09f3.png "Roue Tsérouf · Commit f4b09f3")
 
-[Commit f4b09f3](https://github.com/olange/roue-tserouf/commit/fbddc9b5db) (tag [experiment-03](https://github.com/olange/roue-tserouf/tree/experiment-03))
+[Commit f4b09f3](https://github.com/olange/roue-tserouf/commit/f4b09f3) (tag [experiment-03](https://github.com/olange/roue-tserouf/tree/experiment-03))

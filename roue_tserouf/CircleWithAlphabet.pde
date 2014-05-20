@@ -1,7 +1,7 @@
 class CircleWithAlphabet {
   final float STROKE = 3.0;
   final color LUMIERE_FOSSILE = #FFDDCC; 
-  final int   OPACITY = 128;
+  final int   OPACITY = 192;
   final int   ALPHABET_LEN = 22;
   final float ANGLE = TWO_PI / ALPHABET_LEN;
   final float half_ANGLE = ANGLE / 2.0;
@@ -15,7 +15,7 @@ class CircleWithAlphabet {
   
   void setOuterRadius( float radius) {
     outer_radius = radius;
-    inner_radius = outer_radius * 0.7;
+    inner_radius = outer_radius * 0.77;
     circle_width = outer_radius - inner_radius;
     middle_radius = inner_radius + circle_width / 2.0;  
     half_outer_radius = outer_radius / 2.0;
@@ -38,7 +38,7 @@ class CircleWithAlphabet {
       line( half_inner_radius, 0, 0, half_outer_radius, 0, 0);
       rotateZ( half_ANGLE);
       noStroke();
-      fill( RAYONNEMENT_FOSSILE, OPACITY);
+      fill( LUMIERE_FOSSILE, OPACITY);
       text( char( i + 65), half_middle_radius, 0, 0);
     } 
     popMatrix();
