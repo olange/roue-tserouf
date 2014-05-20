@@ -1,4 +1,8 @@
-roue-tserouf
+Roue Tsérouf
 ============
 
-Roue Tsérouf selon les combinatoires de Abraham Aboulafia
+Roue Tsérouf selon les combinatoires de Abraham Aboulafia.
+
+Visualisation dans le cadre de la création théâtrale [Construire une cathédrale de mots](https://www.facebook.com/events/627615767314919/) autour de l'oeuvre de [Armand Gatti](http://www.armand-gatti.org), qui sera présentée au Centre culturel ABC de la Chaux-de-Fonds du 21 au 27 septembre 2014.
+
+Inspiration pour la disposition: illustration de l'article [Abraham Aboulafia, Cabaliste et prophète](http://www.lyber-eclat.net/lyber/wolson/wolfson.html) de Elliot. R. Wolfson (cité par Catherine Rohner, Universite de Neuchâtel).
