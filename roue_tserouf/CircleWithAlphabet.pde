@@ -20,9 +20,10 @@ class CircleWithAlphabet {
     translate( center.x, center.y, 0);
     ellipse( 0, 0, OUTER_RADIUS, OUTER_RADIUS);
     ellipse( 0, 0, INNER_RADIUS, INNER_RADIUS);
-    for( float i = 0; i < ALPHABET_LEN; i++) {
-      rotateZ( i * TWO_PI / ALPHABET_LEN);
-      line( 0, 0, 0, INNER_RADIUS, 0, 0);
+    
+    for( int i = 0; i < ALPHABET_LEN; i++) {
+      rotateZ( TWO_PI / ALPHABET_LEN * millis() / 1000 * i);
+      line( INNER_RADIUS / 2, 0, 0, OUTER_RADIUS / 2, 0, 0);
     } 
     popMatrix();
   }
