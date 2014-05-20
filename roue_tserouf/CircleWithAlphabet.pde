@@ -1,10 +1,10 @@
 class CircleWithAlphabet {
-  final float STROKE = 3.0;
+  final float STROKE = 2.0;
   final color LUMIERE_FOSSILE = #FFDDCC; 
-  final int   OPACITY = 192;
+  final int   SOME_TRANSPARENCY = 192;
   final int   ALPHABET_LEN = 22;
   final float ANGLE = TWO_PI / ALPHABET_LEN;
-  final float half_ANGLE = ANGLE / 2.0;
+  final float HALF_ANGLE = ANGLE / 2.0;
 
   float outer_radius, inner_radius, middle_radius, circle_width;  
   float half_outer_radius, half_inner_radius, half_middle_radius;
@@ -25,21 +25,20 @@ class CircleWithAlphabet {
 
   void draw() {
     pushMatrix();
-    noFill();
-    stroke( LUMIERE_FOSSILE, OPACITY);
+    stroke( LUMIERE_FOSSILE, SOME_TRANSPARENCY);
     strokeWeight( STROKE);
-    // translate( center.x, center.y, 0);
+
+    noFill();
     ellipse( 0, 0, outer_radius, outer_radius);
     ellipse( 0, 0, inner_radius, inner_radius);
+
+    fill( LUMIERE_FOSSILE, SOME_TRANSPARENCY);
     textAlign( CENTER, CENTER);
-    for( int i = 0; i < 22; i++) {
-      rotateZ( half_ANGLE * millis() / 2500);
-      stroke( LUMIERE_FOSSILE, OPACITY);
-      line( half_inner_radius, 0, 0, half_outer_radius, 0, 0);
-      rotateZ( half_ANGLE);
-      noStroke();
-      fill( LUMIERE_FOSSILE, OPACITY);
+    for( int i = 0; i < ALPHABET_LEN; i++) {
+      rotateZ( HALF_ANGLE * millis() / 2500);
       text( char( i + 65), half_middle_radius, 0, 0);
+      rotateZ( HALF_ANGLE);
+      line( half_inner_radius, 0, 0, half_outer_radius, 0, 0);
     } 
     popMatrix();
   }

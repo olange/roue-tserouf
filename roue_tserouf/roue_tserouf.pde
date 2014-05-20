@@ -20,7 +20,7 @@ void setup() {
 
 void draw() {
   background( 0);
-  translate( width/2 + 40.0, height * 7.0 / 18.0, 0.0);
+  translate( width / 2.0 + 50.0, height * 5.0 / 14.0, 0.0);
   rotateX( QUARTER_PI * 1.25);
   rotateY( HALF_PI / 3.0);
   c1.draw();
