@@ -1,5 +1,6 @@
 
-CircleWithAlphabet c1, c2, c3, c4; 
+CircleWithAlphabet c1, c2, c3, c4;
+Alphabet h1, h2;
 PFont baseFont;
 
 void setup() {
@@ -12,10 +13,12 @@ void setup() {
   baseFont = loadFont( "SansSerif-48.vlw");
   textFont( baseFont, 48);
 
-  c1 = new CircleWithAlphabet( width / 1.5);
-  c2 = new CircleWithAlphabet( width / 1.5 * 0.77);
-  c3 = new CircleWithAlphabet( width / 1.5 * 0.77 * 0.77);
-  c4 = new CircleWithAlphabet( width / 1.5 * 0.77 * 0.77 * 0.77);
+  h1 = new Alphabet( "ABCDEFG");
+  h2 = new Alphabet( "HIJKLMN");
+  c1 = new CircleWithAlphabet( width / 1.5, h1);
+  c2 = new CircleWithAlphabet( width / 1.5 * 0.77, h2);
+  c3 = new CircleWithAlphabet( width / 1.5 * 0.77 * 0.77, h1);
+  c4 = new CircleWithAlphabet( width / 1.5 * 0.77 * 0.77 * 0.77, h2);
 }
 
 void draw() {

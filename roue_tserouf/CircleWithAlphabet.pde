@@ -2,17 +2,23 @@ class CircleWithAlphabet {
   final float STROKE = 2.0;
   final color LUMIERE_FOSSILE = #FFDDCC; 
   final int   SOME_TRANSPARENCY = 192;
-  final int   ALPHABET_LEN = 22;
-  final float ANGLE = TWO_PI / ALPHABET_LEN;
-  final float HALF_ANGLE = ANGLE / 2.0;
 
   float outer_radius, inner_radius, middle_radius, circle_width;  
   float half_outer_radius, half_inner_radius, half_middle_radius;
-  
-  CircleWithAlphabet( float radius) {
+  float angle, half_angle;
+  Alphabet alphabet;
+
+  CircleWithAlphabet( float radius, Alphabet alphabet) {
     setOuterRadius( radius);
+    setAlphabet( alphabet);
   }
-  
+
+  void setAlphabet( Alphabet alphabet_) {
+    alphabet = alphabet_;
+    angle = TWO_PI / alphabet.length();
+    half_angle = angle / 2.0;    
+  }
+
   void setOuterRadius( float radius) {
     outer_radius = radius;
     inner_radius = outer_radius * 0.77;
@@ -34,10 +40,11 @@ class CircleWithAlphabet {
 
     fill( LUMIERE_FOSSILE, SOME_TRANSPARENCY);
     textAlign( CENTER, CENTER);
-    for( int i = 0; i < ALPHABET_LEN; i++) {
-      rotateZ( HALF_ANGLE * millis() / 2500);
-      text( char( i + 65), half_middle_radius, 0, 0);
-      rotateZ( HALF_ANGLE);
+    alphabet.rewind();
+    while( alphabet.hasNext()) {
+      rotateZ( half_angle * millis() / 2500);
+      text( alphabet.next(), half_middle_radius, 0, 0);
+      rotateZ( half_angle);
       line( half_inner_radius, 0, 0, half_outer_radius, 0, 0);
     } 
     popMatrix();
