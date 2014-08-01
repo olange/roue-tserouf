@@ -4,10 +4,11 @@ Alphabet h1, h2;
 PFont baseFont;
 
 void setup() {
-  // size( int( displayWidth*0.6), int( displayHeight*0.6), P3D);
+  size( int( displayWidth*0.6), int( displayHeight*0.6), P3D);
   // size( 1280, 800, P3D);
   // size( 1550, 1180, P3D); // Projecteur Panasonic Temple Allemand
-  size( displayWidth, displayHeight, P3D);
+  // size( displayWidth, displayHeight, P3D);
+  frame.setTitle( "Roue Tserouf");
   sphereDetail( 15);
   smooth();
   lights();
@@ -34,4 +35,3 @@ void draw() {
   c3.draw();
   c4.draw();
 }
-
