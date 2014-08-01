@@ -26,9 +26,9 @@ void setup() {
 
 void draw() {
   background( #901D39);
-  translate( width / 2.0 + 50.0, height * 5.0 / 14.0, 0.0);
-  rotateX( QUARTER_PI * 1.25);
-  rotateY( HALF_PI / 3.0);
+  translate( width / 2.0, height / 2.0, 0.0);
+  // rotateX( QUARTER_PI * 1.25);
+  // rotateY( HALF_PI / 3.0);
   rotateZ( QUARTER_PI / 3.0 * millis() / 5000.0);
   c1.draw();
   c2.draw();
