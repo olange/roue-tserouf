@@ -1,17 +1,30 @@
+import codeanticode.syphon.*;
 
+final boolean SYPHON_OUTPUT = true;
+
+SyphonServer server;
 CircleWithAlphabet c1, c2, c3, c4;
 Alphabet h1, h2;
 PFont baseFont;
 
 void setup() {
-  size( int( displayWidth*0.6), int( displayHeight*0.6), P3D);
-  // size( 1280, 800, P3D);
-  // size( 1550, 1180, P3D); // Projecteur Panasonic Temple Allemand
-  // size( displayWidth, displayHeight, P3D);
-  frame.setTitle( "Roue Tserouf");
+  if( SYPHON_OUTPUT) {
+    size( 4000, 1024, P3D);
+    server = new SyphonServer( this, "Processing sketch");
+  } else {
+    // size( int( displayWidth*0.6), int( displayHeight*0.6), P3D);
+    // size( 1550, 1180, P3D); // Projecteur Panasonic Temple Allemand
+    size( displayWidth, displayHeight, P3D);
+    if( frame != null) {
+      frame.setResizable( true);
+      frame.setTitle( "Roue Tserouf");
+    }
+  }
+  
   sphereDetail( 15);
   smooth();
   lights();
+  frameRate( 25);
 
   baseFont = loadFont( "SansSerif-48.vlw");
   textFont( baseFont, 48);
@@ -34,4 +47,5 @@ void draw() {
   c2.draw();
   c3.draw();
   c4.draw();
+  if( SYPHON_OUTPUT) { server.sendScreen(); }
 }
